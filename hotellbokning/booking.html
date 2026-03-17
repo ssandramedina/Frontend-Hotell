@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotell Sandras - Boka vistelse</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <nav>
+    <div class="navbar">
+    <h2> Hotell Sandra</h2>
+
+<div class="menu">
+    <a href="index.html">Start</a>
+    <a href="booking.html">Boka vistelse</a>
+</div>
+
+</div> 
+</nav>
+
+<section class="booking-section">
+    <h1> Välj ett rum som passar dig</h1>
+
+    <div class="rooms">
+        <div class="room">
+            <img src="../bilder/1.jpg" alt="Rum: Classic">
+            <div class="room-info"></div>
+            <h2>Classic</h2>
+            <p>Våra Classic rum erbjuder moderna bekvämligheter med möjlighet till en valbar frukost.</p>
+        </div>
+
+            <div class="room">
+                <img src="../bilder/2.jpg" alt="Rum: Deluxe">
+                <div class="room-info"></div>
+                <h2>Deluxe</h2>
+                <p>Våra Deluxe rum har en lyxig atmosfär, havsutsikt och bekvämligheter i toppklass. Frukost ingår.</p>
+            </div>
+            <div class="room">
+                <img src="../bilder/3.jpg" alt="Rum: Suite">
+                <div class="room-info"></div>
+                <h2>Suite</h2>
+                <p>Våra Suite rum är våra med exklusina sviter, där avkopplande jacuzzi och inkluderad frukost på rummet ingår.</p>
+            </div>
+
+            
+
+    </div>
+
+    <form id="bookingForm">
+        <label for="name">Förnamn:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="lastname">Efternamn:</label>
+        <input type="text" id="lastname" name="lastname" required>
+
+        <label for="email">Mailadress:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="room">Välj ditt rum nedan:</label>
+        <select id="room" name="room" required>
+            <option value="">Välj</option>
+            <option value="Classic">Classic</option>
+            <option value="Deluxe">Deluxe</option>
+            <option value="Suite">Suite</option>
+        </select>
+
+        <label for="checkin">Datum för incheckning:</label>
+        <input type="date" id="checkin" name="checkin" required>
+
+        <label for="checkin">Datum för utcheckning:</label>
+        <input type="date" id="checkout" name="checkout" required>
+
+        <label for="checkin">Antal gäster:</label>
+        <input type="number" id="guests" name="guests" min="1" max="7" required>
+
+        <button type="submit">Boka rum</button>
+    </form>
+</section>
+
+<footer>
+
+    <p>© Sandra 2026</p>
+
+</footer>
+<script src="../js/javascript.js"></script>
+</body>
+</html>
+
